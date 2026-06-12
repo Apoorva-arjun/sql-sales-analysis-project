@@ -1,9 +1,9 @@
 # sql-sales-analysis-project
 
-##Objective
+## Objective
 SQL analysis of sales performance
 
-##skills used
+## skills used
 - SQL
 - GitHub
 
