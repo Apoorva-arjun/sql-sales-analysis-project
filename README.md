@@ -13,6 +13,7 @@ SQL analysis of sales performance
 - Day 3: JOIN 2 tables - Show product names instead of IDs - `IMG_0009.png`
 - Day 4: JOIN + WHERE - Top 5 products in West region, Laptop = 15k - `IMG_0010.png`
 - Day 5: CASE WHEN - Product segmentation. Only Laptop = 'High Value' 15k revenue, all others = 'Low Value' - `IMG_0011.png`
+- Day 6: CASE WHEN + WHERE - WEST Region High value products - `IMG_0012.png`
   
 ## Key Insight
 Laptop is the #1 product overall and dominates West region revenue. This shows regional product demand varies.
