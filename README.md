@@ -30,5 +30,10 @@ Insight: Laptop is 83% of total revenue. Prioritize stock/marketing.`IMG_0014.pn
 Query: [CASE WHEN query you just ran]
 Result: High Value 2, Medium Value 1, Low Value 1
 Insight: 50% of sales are high-value products. Good revenue mix.`IMG_0015.png`
+
+- Day 7: SQL JOIN
+Learned to combine tables using JOIN + handle column names with spaces.
+Debugged 5+ errors before getting correct West region sales data. `IMG_0017.png`
+
 ## Key Insight
 Laptop is the #1 product overall and dominates West region revenue. This shows regional product demand varies.
