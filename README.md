@@ -14,7 +14,11 @@ SQL analysis of sales performance
 - Day 4: JOIN + WHERE - Top 5 products in West region, Laptop = 15k - `IMG_0010.png`
 - Day 5: CASE WHEN - Product segmentation. Only Laptop = 'High Value' 15k revenue, all others = 'Low Value' - `IMG_0011.png`
 - Day 6: CASE WHEN + WHERE - WEST Region High value products - `IMG_0012.png`
-  # SQL Sales Analysis Project - Day 6
+- Day 7: SQL JOIN
+Learned to combine tables using JOIN + handle column names with spaces.
+Debugged 5+ errors before getting correct West region sales data. `IMG_0017.png`
+
+  # SQL Sales Analysis Project - 
 
 ## Q1: Highest Revenue Region
 Query: SELECT Region, SUM(Sales) AS total_revenue FROM sales GROUP BY Region ORDER BY total_revenue DESC LIMIT 1;
@@ -31,9 +35,15 @@ Query: [CASE WHEN query you just ran]
 Result: High Value 2, Medium Value 1, Low Value 1
 Insight: 50% of sales are high-value products. Good revenue mix.`IMG_0015.png`
 
-- Day 7: SQL JOIN
-Learned to combine tables using JOIN + handle column names with spaces.
-Debugged 5+ errors before getting correct West region sales data. `IMG_0017.png`
+## Q4: JOIN products + sales tables
+Query: CREATE TABLE products ( Product TEXT,"Product Name" TEXT);
+INSERT INTO products (Product, "Product Name") VALUES('Laptop', 'Laptop'),('Keyboard', 'Keyboard');
+
+-- Final working query
+SELECT p."Product Name", s.Region, s.Sales
+FROM products p
+JOIN sales s ON p.Product = s."Product Name"
+WHERE s.Region = 'West';
 
 ## Key Insight
 Laptop is the #1 product overall and dominates West region revenue. This shows regional product demand varies.
